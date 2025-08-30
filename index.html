@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>منوی کافه — Cafe BBK</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Vazirmatn:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="logo">BBK</div>
+        <div>
+          <h1>کافه بـ بـ کـا</h1>
+          <p class="lead">منوی قهوه — لمس یا اسکن کن برای دیدن عکس بزرگ</p>
+        </div>
+      </header>
+      <aside class="panel" aria-label="ویژگی‌ها">
+        <h4>فیلتر دسته‌ها</h4>
+        <div class="category-list">
+          <div class="cat active" data-cat="all">همه</div>
+          <div class="cat" data-cat="گرم">گرم</div>
+          <div class="cat" data-cat="سرد">سرد</div>
+          <div class="cat" data-cat="دسر">دسر</div>
+        </div>
+        <hr
+          style="margin: 14px 0; border: 0;border-top: 1px solid rgba(255, 255, 255, 0.03); "
+        />
+      </aside>
+
+      <main class="menu" aria-label="منوی کافه">
+        <div class="searchbar">
+          <input id="search" placeholder="جستجو بر اساس نام قهوه..." />
+        </div>
+
+        <div class="cards" id="menu-cards">
+          <!-- نمونه آیتم‌ها — برای اضافه/حذف ویرایش کن -->
+          <div class="card" data-category="سرد">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b8d9c3b0a3f2f2bc4d0e0f1f4d6f2e6"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>آیس لاته وانیلی</h3>
+              <p>شات اسپرسو، شیر تازه و شربت وانیل — فوق‌العاده خنک</p>
+            </div>
+            <div class="price">65,000ت</div>
+          </div>
+
+          <div class="card" data-category="گرم">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b5b1f0e9d0b9b34b6fa5ad2c3f3b7c6"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>کاپوچینو کلاسیک</h3>
+              <p>فوم مخملی، روست تیره مخصوص کافه</p>
+            </div>
+            <div class="price">55,000ت</div>
+          </div>
+
+          <div class="card" data-category="سرد">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ddff1ef0a8b1c7e5f0a1b3d9c2e5f7ee"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>فرِپّه شات‌دار</h3>
+              <p>قهوه سرد، تکه‌های یخ و خامه سبک</p>
+            </div>
+            <div class="price">70,000ت</div>
+          </div>
+
+          <div class="card" data-category="گرم">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1509482560494-4126f11df5d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7f9b7a6c2e8f8d2b1b4d4c6f2e8b9a1a"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>اسپرسو دو شات</h3>
+              <p>روست متوسط</p>
+            </div>
+            <div class="price">60,000ت</div>
+          </div>
+           <div class="card" data-category="گرم">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1509482560494-4126f11df5d4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=7f9b7a6c2e8f8d2b1b4d4c6f2e8b9a1a"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>اسپرسو تک شات</h3>
+              <p>روست متوسط</p>
+            </div>
+            <div class="price">40,000ت</div>
+          </div>
+
+          <div class="card" data-category="دسر">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1544378736-3b9d7b8d7d33?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f2b3c4a5a6b7c8d9e0f1a2b3c4d5e6f"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>موکا نوتی</h3>
+              <p>قهوه + شکلات + کرم فندق — ترکیبی لوکس</p>
+            </div>
+            <div class="price">75,000ت</div>
+          </div>
+          <div class="card" data-category="گرم">
+            <div class="thumb">
+              <img
+                src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=5c6d7b8a9b0c1d2e3f4g5h6i7j8k9l0m"
+                alt="آیتم"
+              />
+            </div>
+            <div class="info">
+              <h3>لانگ بلک خاص</h3>
+              <p>آب جوش و اسپرسوی تازه</p>
+            </div>
+            <div class="price">45,000ت</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- modal -->
+    <div class="modal" id="modal">
+      <div class="box">
+        <button class="closebtn" id="closeModal">✕</button>
+        <img id="modalImg" src="" alt="" />
+        <div class="meta">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc" style="opacity: 0.85"></p>
+          <p
+            style="margin-top: 10px; font-weight: 700; color: var(--accent1)"
+            id="modalPrice"
+          ></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // کارت‌ها، جستجو و فیلتر ساده
+      const cards = Array.from(document.querySelectorAll(".card"));
+      const search = document.getElementById("search");
+      const cats = Array.from(document.querySelectorAll(".cat"));
+
+      // باز شدن modal با اطلاعات کارت
+      const modal = document.getElementById("modal");
+      const modalImg = document.getElementById("modalImg");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalDesc = document.getElementById("modalDesc");
+      const modalPrice = document.getElementById("modalPrice");
+      const closeModal = document.getElementById("closeModal");
+
+      cards.forEach((c) => {
+        c.addEventListener("click", () => {
+          const img = c.querySelector("img").src;
+          const title = c.querySelector("h3").innerText;
+          const desc = c.querySelector("p").innerText;
+          const price = c.querySelector(".price").innerText;
+          modalImg.src = img;
+          modalTitle.innerText = title;
+          modalDesc.innerText = desc;
+          modalPrice.innerText = price;
+          modal.classList.add("open");
+        });
+      });
+
+      closeModal.addEventListener("click", () =>
+        modal.classList.remove("open")
+      );
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) modal.classList.remove("open");
+      });
+
+      // جستجو
+      search.addEventListener("input", (e) => {
+        const q = e.target.value.trim().toLowerCase();
+        cards.forEach((card) => {
+          const txt = (
+            card.querySelector("h3").innerText +
+            " " +
+            card.querySelector("p").innerText
+          ).toLowerCase();
+          card.style.display = txt.includes(q) ? "flex" : "none";
+        });
+      });
+
+      // دسته‌بندی
+      cats.forEach((cat) => {
+        cat.addEventListener("click", () => {
+          cats.forEach((c) => c.classList.remove("active"));
+          cat.classList.add("active");
+          const key = cat.dataset.cat;
+          cards.forEach((card) => {
+            if (key === "all") card.style.display = "flex";
+            else
+              card.style.display =
+                card.dataset.category === key ? "flex" : "none";
+          });
+          // پاک کنه نوار جستجو
+          search.value = "";
+        });
+      });
+
+      // نکته: برای تغییر آیتم‌ها، مستقیم در HTML بخش کارت‌ها (div.card) متن‌ها و آدرس عکس‌ها رو عوض کن.
+    </script>
+  </body>
+</html>
